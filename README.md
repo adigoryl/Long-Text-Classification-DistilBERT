@@ -1,4 +1,5 @@
 # DistilBert Long Text Classification
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1FF10UCiKWyGYt3-sYzH786mjsrzE--dC)
 
 Goal: Predict missing labels from multi-featured textual data.  
 
