@@ -1,0 +1,6 @@
+# ALBERT-classifier
+
+Goal: Predict missing labels from multi-featured textual data.  
+
+This project uses a pre-trained transformer-based network (DistilBert) to predict the missing labels. It is done by training a classifier head on the DistilBert's bidirectional word representations. After training, the model should predict the missing label, given its corresponding textual features as the input.  
+In more detail, to train the classifier, I have split the dataset into two parts, samples without missing features and samples with missing. I have used full samples to do supervised training.  As it turned out, the dataset is very limited and disproportional. A total of 1959, from which 734 have missing features (mostly labels). Therefore, there are 1225 training samples, from which 225 I have used to evaluate the model training performance. Out of 1000 left for model training, 1/4 have positive labels, making the training extremely difficult. This made me decide to create two examples out of each positive sample, by treating the "title" and "meta_data" as two separate inputs.  Despite the data amendments, the model mostly predicts a negative label ("no") for most of the predictions. More data examples with better proportions should yield more satisfying results.
