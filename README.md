@@ -1,4 +1,4 @@
-# ALBERT-classifier
+# DistilBert Long Text Classification
 
 Goal: Predict missing labels from multi-featured textual data.  
 
